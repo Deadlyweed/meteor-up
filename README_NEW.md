@@ -99,7 +99,7 @@ This will create two files in your Meteor Up project directory:
 module.exports = {
   servers: {
     one: {
-      host: 'xxx.xxx.xx.xx',
+      host: 'xxx.xxx.xx.xx', // Your IP for test or production server
       username: 'root',
       // pem: '/home/user/.ssh/id_rsa', // mup doesn't support '~' alias for home directory
       // password: 'password',
