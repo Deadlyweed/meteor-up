@@ -120,7 +120,7 @@ module.exports = {
 
 	  // lets you add docker volumes (optional) //
       // volumes: { 
-      // "/host/path": "/container/path", // passed as '-v /host/path:/container/path' to the docker run command
+      // "/host/path": "/container/path", //passed as '-v /host/path:/container/path' to the docker run command
       // "/second/host/path": "/second/container/path"
       // },
     docker: {
@@ -141,30 +141,39 @@ module.exports = {
       // (--server-only--) Skip building mobile apps even if mobile platforms have been added. (optional)  //
       serverOnly: true,
 
-	  // (--architecture--) Builds the server for a different architecture than your developer machine's architecture. Valid architectures include os.osx.x86_64, os.linux.x86_32, os.linux.x86_64, os.windows.x86_32 and os.windows.x86_64 //
+	  // (--architecture--) Builds the server for a different architecture than your developer machine's //
+	  // architecture. Valid architectures include os.osx.x86_64, os.linux.x86_32, os.linux.x86_64, //
+	  // os.windows.x86_32 and os.windows.x86_64 //
 	  architecture: 'os.linux.x86_64',
 
 	  // (--debug--) Build in debug mode (don't minify, etc). (optional) // 
       // debug: true,
 
-	  // (--server--) Location where mobile builds connect to the Meteor server. Defaults to localhost:3000. Can include a URL scheme (Example 1, http://example.com:8080 Example 2, http://sub.example.com:8080). //
-	  server: 'http://xxx.xxx.xx.xx:8080',
+	  // (--server--) Location where mobile builds connect to the Meteor server. Defaults to localhost:3000. //
+	  // Can include a URL scheme (Example 1, http://example.com:8080 Example 2, http://sub.example.com:8080). //
+	  // server: 'http://xxx.xxx.xx.xx:8080',
 
 	  // default (optional) //
       // cleanAfterBuild: true,
 
-	  // (--directory--) Output a directory (rather than a tarball) for the application server bundle. If the output location exists, it will be recursively deleted first. Defaults to /tmp/<uuid> (optional) //
+	  // (--directory--) Output a directory (rather than a tarball) for the application server bundle. //
+	  // If the output location exists, it will be recursively deleted first. Defaults to /tmp/<uuid> (optional) //
       // buildLocation: '/my/build/folder',
 
-	  // (--mobile-settings--) Set optional data for the initial value of Meteor.settings in your mobile application. A new value for Meteor.settings can be set later by the server as part of hot code push. (optional) //
+	  // (--mobile-settings--) Set optional data for the initial value of Meteor.settings in your mobile //
+	  // application. A new value for Meteor.settings can be set later by the server as //
+	  // part of hot code push. (optional) //
       // mobileSettings: { 
       // yourMobileSetting: "setting value"
       // }
 
-	  // (--allow-incompatible-update--) Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints. (optional) //
+	  // (--allow-incompatible-update--) Allow packages in your project to be upgraded or downgraded //
+	  // to versions that are potentially incompatible with the current versions, if required to satisfy //
+	  // all package version constraints. (optional) //
     },
     env: {
-      //(Example 1, http://sub.example.com Example 2, http://xxx.xxx.xx.xx). You can even use NoIP for this as long you point the domain to your IP on your server. //
+      // (Example 1, http://sub.example.com Example 2, http://xxx.xxx.xx.xx). You can even use NoIP //
+      // for this as long you point the domain to your IP on your server. //
       ROOT_URL: 'http://example.com',
       MONGO_URL: 'mongodb://localhost/meteor'
     },
