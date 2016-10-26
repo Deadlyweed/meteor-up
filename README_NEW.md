@@ -1,4 +1,4 @@
-README.md# meteor-up [![Stories in Ready](https://badge.waffle.io/kadirahq/meteor-up.svg?label=ready&title=Ready)](http://waffle.io/kadirahq/meteor-up)
+README_NEW.md# meteor-up [![Stories in Ready](https://badge.waffle.io/kadirahq/meteor-up.svg?label=ready&title=Ready)](http://waffle.io/kadirahq/meteor-up)
 
 #### Production Quality Meteor Deployments
 
@@ -150,8 +150,8 @@ module.exports = {
       // debug: true,
 
 	  // (--server--) Location where mobile builds connect to the Meteor server. Defaults to localhost:3000. //
-	  // Can include a URL scheme (Example 1, http://example.com:8080 Example 2, http://sub.example.com:8080). //
-	  // server: 'http://xxx.xxx.xx.xx:8080',
+	  // Can include a URL scheme (Example 1, http://example.com:80 Example 2, http://sub.example.com:80). //
+	 server: 'http://xxx.xxx.xx.xx:80',
 
 	  // default (optional) //
       // cleanAfterBuild: true,
