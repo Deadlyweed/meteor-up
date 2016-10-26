@@ -8,16 +8,15 @@ You can install and use Meteor Up on Linux, Mac and Windows.
 
 This version of Meteor Up is powered by [Docker](http://www.docker.com/), making deployment easy to manage and reducing a lot of server specific errors.
 
-I'm making this new read file on my account because I will be making more changes to this. I only tested it for a single app on a server but I thing I found a way to make it easier to deploy more then one app on one server. My first test for more then one app on one server failed. The project i was using doesn't support Ubuntu 16. I will be contecting them to see when they will be supporting Ubuntu 16. I will be testing it on Ubuntu 14 server to see if it works. If it does work, I will be update the readme file with that info. 
+I'm making this new read file on my account because I will be making more changes to this. I only tested it for a single app on a server.
 
 I know my mup.js work 100% the way i have it set up. Anything I dont have comment out is what i got to work. I dont think anything that you uncomment to use should work. I'm using windows and deploy right to digital ocean account with no problem. 
 
 This will work for:
 Windows to Linux
-Linux to Windows
 
 Haven't been test for:
-Mac to Windows
+Mac to Windows-
 Mac to Linux
 
 **Table of Contents**
@@ -119,8 +118,9 @@ module.exports = {
       // port: 000,
 
 	  // lets you add docker volumes (optional) //
-      // volumes: { 
-      // "/host/path": "/container/path", //passed as '-v /host/path:/container/path' to the docker run command
+      // volumes: {
+	  // passed as '-v /host/path:/container/path' to the docker run command //
+      // "/host/path": "/container/path", 
       // "/second/host/path": "/second/container/path"
       // },
     docker: {
@@ -138,7 +138,7 @@ module.exports = {
       one: {}, two: {}, three: {} // list of servers to deploy, from the 'servers' list
     },
     buildOptions: {
-      // (--server-only--) Skip building mobile apps even if mobile platforms have been added. (optional)  //
+      // (--server-only--) Skip building mobile apps even if mobile platforms have been added. (optional) //
       serverOnly: true,
 
 	  // (--architecture--) Builds the server for a different architecture than your developer machine's //
@@ -151,13 +151,14 @@ module.exports = {
 
 	  // (--server--) Location where mobile builds connect to the Meteor server. Defaults to localhost:3000. //
 	  // Can include a URL scheme (Example 1, http://example.com:80 Example 2, http://sub.example.com:80). //
-	 server: 'http://xxx.xxx.xx.xx:80',
+	  server: 'http://xxx.xxx.xx.xx:80',
 
 	  // default (optional) //
       // cleanAfterBuild: true,
 
 	  // (--directory--) Output a directory (rather than a tarball) for the application server bundle. //
-	  // If the output location exists, it will be recursively deleted first. Defaults to /tmp/<uuid> (optional) //
+	  // If the output location exists, it will be recursively deleted first. //
+	  // Defaults to /tmp/<uuid> (optional) //
       // buildLocation: '/my/build/folder',
 
 	  // (--mobile-settings--) Set optional data for the initial value of Meteor.settings in your mobile //
