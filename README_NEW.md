@@ -112,7 +112,8 @@ module.exports = {
 
   meteor: {
     name: 'appname',
-    path: './', // mup doesn't support '~' alias for home directory
+    path: './', // mup for a single app (best for windows to linux)
+      // path: './home/multipleapp/', // mup for multiple app
 
 	  // useful when deploying multiple instances (optional) //
       // port: 000,
